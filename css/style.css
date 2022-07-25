@@ -268,8 +268,8 @@ body {
 }
 
 .project-list img {
-  height: 180px;
-  width: 180;
+  height: 150px;
+  width: 180px;
   border-radius: 25px;
 }
 
@@ -463,6 +463,10 @@ ul {
     max-width: 100%;
     overflow-x: hidden;
   }
+  .starting-page {
+    height: 930px;
+  }
+
   .section-title,
   .divider,
   .skill-content {
