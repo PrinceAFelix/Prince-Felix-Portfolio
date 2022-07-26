@@ -78,10 +78,13 @@ body {
 }
 
 .fa-solid {
-  position: absolute;
-  transform: translateX(-15px);
   margin-top: 50px;
-  animation: arrow-animation 1200ms ease-in infinite alternate;
+  font-size: 50px;
+  color: #000000;
+  text-shadow: 50 0 55px black, 0 1px 0 rgba(0,0,0, .25);
+  animation: animate-text 0.5s linear infinite;
+  transform: translateY(150px);
+  opacity: 0;
 }
 
 .section-title {
@@ -143,6 +146,11 @@ body {
 .about-text {
   width: auto;
   height: auto;
+}
+
+.about-text a{
+  text-decoration: none;
+  color: white;
 }
 
 .about-text p {
@@ -396,6 +404,11 @@ body {
   padding-top: 50px;
 }
 
+.footer a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer .links {
   display: block;
   list-style: none;
@@ -425,6 +438,21 @@ ul {
   font-size: 24px;
 }
 
+
+/* TRANSITIION FADE IN  */
+.fade{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.fade.active{
+  transform: translateY(0px);
+  opacity: 1;
+  
+}
+
 /*
 
 .skeleton {
@@ -441,21 +469,25 @@ ul {
   }
 } */
 
-@keyframes arrow-animation {
-  0% {
-    font-size: 30px;
-    color: #ff0000;
+@keyframes animate-text {
+  0%,100%
+  {
+   text-shadow: -1.5px -1.5px 0 #00fff7,1.5px 1.5px 0 #ff0000;
   }
+  25%
+  {
+   text-shadow: 1.5px 1.5px 0 #00fff7,-1.5px -1.5px 0 #ff0000;
+  }
+  50%
+  {
+   text-shadow: 1.5px 1.5px 0 #00fff7,-1.5px 1.5px 0 #ff0000;
+  }
+  75%
+  {
+   text-shadow: -1.5px 1.5px 0 #00fff7,1.5px -1.5px 0 #ff0000;
+  }
+ }
 
-  50% {
-    color: #ffff;
-  }
-
-  100% {
-    font-size: 50px;
-    color: #ffff00;
-  }
-}
 
 @media all and (max-width: 430px) {
   body,

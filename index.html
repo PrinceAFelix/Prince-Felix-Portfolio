@@ -33,7 +33,7 @@
         <div class="middle-text">
             <h1>Hi,<br>I'm Prince!</h1>
             <a href="#about" style="color: white;">
-                <i class="fa-solid fa-arrow-down"></i>
+                <i class="fa-solid fa-arrow-down fade"></i>
             </a>
         </div>
        
@@ -43,7 +43,7 @@
         <section class="about-section" id="about">
             <h1 class="section-title">About me</h1>
             <span class="divider"></span>
-            <div class="about-content">
+            <div class="about-content fade">
                 <div class="myInfo">
                     <div id="profPic">
                         <img class="skeleton" src="images/PRIMG.jpg" alt="myPic">
@@ -70,7 +70,7 @@
         <section class="skill-section" id="skills">
             <h1 class="section-title">Skills</h1>
             <span class="divider"></span>
-            <div class="skill-content">
+            <div class="skill-content fade">
                 <div class="skill-text">
                     <h4>Familiarity with the Following Technical Skills</h1>
                         <ul class="skills-list">
@@ -110,8 +110,8 @@
                         <span>85%</span>
                     </div>
                     <div class="outer">
-                        <div class="bar-graph" style="--width: var(--wid-85); --heigth: var(--hgt-10);">HTML5 / CSS / JAVASCRIPT</div>
-                        <span>85%</span>
+                        <div class="bar-graph" style="--width: var(--wid-90); --heigth: var(--hgt-10);">HTML5 / CSS / JAVASCRIPT</div>
+                        <span>90%</span>
                     </div>
                     <div class="outer">
                         <div class="bar-graph" style="--width: var(--wid-90); --heigth: var(--hgt-10);">OOP</div>
@@ -133,7 +133,7 @@
 
                 <div class="project-list">
                    
-                    <div class="container">
+                    <div class="container fade">
                         <div class="card">
                             <a href="https://github.com/PrinceAFelix/Flutter-Chat-Application">
                                 <div class="box">
@@ -149,7 +149,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="container">
+                    <div class="container fade">
                         <div class="card">
                             <a href="https://princeafelix.github.io/Weather-API/">
                                 <div class="box">
@@ -164,7 +164,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="container">
+                    <div class="container fade">
                         <div class="card">
                             <a href="https://github.com/PrinceAFelix/Stacker-Game">
                                 <div class="box">
@@ -179,7 +179,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="container">
+                    <div class="container fade">
                         <div class="card">
                             <a href="https://github.com/PrinceAFelix/CST8359-NET-Enterprise-Application-Development/tree/main/Assignment2">
                                 <div class="box">
@@ -195,7 +195,7 @@
                         </div>
                     </div>
                     <!--Project 2 Card-->
-                    <div class="container">
+                    <div class="container fade">
                         <div class="card">
                             <div class="box">
                                 <div class="card-content">
@@ -210,7 +210,7 @@
                         </div>
                     </div>
                     <!--Project 3 Card-->
-                    <div class="container">
+                    <div class="container fade">
                         <div class="card">
                             <div class="box">
                                 <div class="card-content">
@@ -231,7 +231,7 @@
         <section class="contact-section" id="contact">
             <h1 class="section-title center">Get In Touch</h1>
             <span class="divider center"></span>
-            <div class="contact-content">
+            <div class="contact-content fade">
                 <span>Have a question? Connect with me!</span>
                 <div class="contact-form">
                     <form action="https://formspree.io/f/xpzbvyno" method="POST">
@@ -248,17 +248,25 @@
             <div class="footer-content">
                 <ul class="links">
                     <li class="links-item">
+                       <a href="mailto: prineafelix@gmail.com">
                         <i id="icon" class="fa fa-envelope" aria-hidden="true"></i>
+                       </a>
                     </li>
                     <li class="links-item">
-                        <i id="icon" class="fa fa-linkedin-square" ></i>
+                        <a href="https://www.linkedin.com/in/prince-adrianne-felix-84438b231/" target="_blank">
+                            <i id="icon" class="fa fa-linkedin-square" ></i>
+                        </a>
                     </li>
                     <li class="links-item">
-                        <i id="icon" class="fa fa-github"  ></i>
+                        <a href="https://github.com/PrinceAFelix" target="_blank">
+                            <i id="icon" class="fa fa-github"  ></i>
+                        </a>
                     </li>
 
                     <li class="links-item">
-                        <i class="fa fa-brands fa-instagram"></i>
+                        <a href="https://www.instagram.com/prince_afelix/" target="_blank">
+                            <i class="fa fa-brands fa-instagram"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -267,5 +275,6 @@
             </div>
         </div>
     </main>
+    <script type="module" src="javascript/index.js" defer=""></script>
 </body>
 </html>
