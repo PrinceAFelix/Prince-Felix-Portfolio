@@ -19,14 +19,18 @@
 </head>
 <body>
 
+    <div class="menu">
+        <div class="menu_burger"></div>
+    </div>
     <div class="header">
+       
         <nav class="navigation">
             <div class="skeleton"></div>
-            <a class="" href="#">HOME</a>
-            <a class="" href="#about">ABOUT</a>
-            <a class="" href="#skills">SKILLS</a>
-            <a class="" href="#projects">PROJECTS</a>
-            <a class="" href="#contact">CONTACT</a> 
+            <a class="page-link" href="#">HOME</a>
+            <a class="page-link" href="#about">ABOUT</a>
+            <a class="page-link" href="#skills">SKILLS</a>
+            <a class="page-link" href="#projects">PROJECTS</a>
+            <a class="page-link" href="#contact">CONTACT</a> 
         </nav>
     </div>
     <div class="starting-page">
@@ -74,7 +78,7 @@
                 <div class="skill-text">
                     <h4>Familiarity with the Following Technical Skills</h1>
                         <ul class="skills-list">
-                            <div class="skill-label">Programing Languages</div>
+                            <div class="skill-label">Programming Languages</div>
                             <li class="skills-item">Java FX/Swing</li>
                             <li class="skills-item">Java REST</li>
                             <li class="skills-item">Bash Scripts</li>
@@ -234,7 +238,7 @@
             <div class="contact-content fade">
                 <span>Have a question? Connect with me!</span>
                 <div class="contact-form">
-                    <form action="https://formspree.io/f/xpzbvyno" method="POST">
+                    <form name="contact" action="https://formspree.io/f/xpzbvyno" method="POST">
                         <input class="inputField" type="text" name="name" id="nameField" for="fname" placeholder="Name" ><br>
                         <input class="inputField" type="email" name="email" id="emailField" for="email" placeholder="Email"><br>
                         <textarea class="inputField" type="text" name="message" id="messageField" for="message" placeholder="Message"></textarea><br>
@@ -278,3 +282,10 @@
     <script type="module" src="javascript/index.js" defer=""></script>
 </body>
 </html>
+
+
+
+
+
+
+
